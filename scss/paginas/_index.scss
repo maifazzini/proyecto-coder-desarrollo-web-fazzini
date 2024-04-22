@@ -35,14 +35,42 @@
                 font-family: "Lato", sans-serif;
                 font-size: 24px;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-                img {
+                .carrusel-animacion {
                     width: 265px;
                     height: 363px;
+                    overflow: hidden;
+                    ul {
+                        width: 200%;
+                        list-style: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 0;
+                        
+                        &:hover{
+                            animation: carrusel 5s infinite;
+                        }
+
+                        li {
+                            margin: auto;
+                            width: 50%;
+
+                            img {
+                                width: 265px;
+                                height: 363px;
+                            }
+                        }
+                    }
                 }
 
-                div {
-                    margin-top: 10px;
+
+                .texto-inicio-producto {
+                    margin-top: 20px;
 
                     h3 {}
 

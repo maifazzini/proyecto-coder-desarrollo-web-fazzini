@@ -22,7 +22,7 @@
 /* ----------------------------------index---------------------------------------- */
 
 @media screen and (max-width:1310px) {
-    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a img {
+    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul li img {
         width: 235px;
         height: 333px;
     }
@@ -78,8 +78,8 @@
         margin: 55px 0;
     }
 
-    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a div h3,
-    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a div p {
+    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .texto-inicio-producto h3,
+    .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .texto-inicio-producto p {
         font-size: 20px;
     }
 

@@ -76,6 +76,19 @@ body {
   font-weight: 600; }
 
 /* ------------------------fin de bootstrap de navbar-------------------------- */
+/* ------------------------ANIMACIONES--------------------- */
+@keyframes carrusel {
+  0% {
+    margin-left: 0%; }
+  25% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -100%; }
+  75% {
+    margin-left: 0%; }
+  100% {
+    margin-left: 0%; } }
+
 header {
   background-color: #baccd6;
   color: #045B7D;
@@ -137,12 +150,32 @@ footer {
       color: #1A3742;
       font-family: "Lato", sans-serif;
       font-size: 24px;
-      text-align: center; }
-      .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a img {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion {
         width: 265px;
-        height: 363px; }
-      .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a div {
-        margin-top: 10px; }
+        height: 363px;
+        overflow: hidden; }
+        .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul {
+          width: 200%;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0; }
+          .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul:hover {
+            animation: carrusel 5s infinite; }
+          .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul li {
+            margin: auto;
+            width: 50%; }
+            .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul li img {
+              width: 265px;
+              height: 363px; }
+      .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .texto-inicio-producto {
+        margin-top: 20px; }
 
 .vestido-a-medida {
   padding: 52px 100px;
@@ -438,7 +471,7 @@ footer {
 
 /* ----------------------------------index---------------------------------------- */
 @media screen and (max-width: 1310px) {
-  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a img {
+  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .carrusel-animacion ul li img {
     width: 235px;
     height: 333px; } }
 
@@ -472,8 +505,8 @@ footer {
   .losmasvendidos-inicio .contenedor-producto-inicio {
     grid-template-columns: 1fr;
     margin: 55px 0; }
-  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a div h3,
-  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a div p {
+  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .texto-inicio-producto h3,
+  .losmasvendidos-inicio .contenedor-producto-inicio .producto-inicio a .texto-inicio-producto p {
     font-size: 20px; }
   .vestido-a-medida p {
     font-size: 20px;
