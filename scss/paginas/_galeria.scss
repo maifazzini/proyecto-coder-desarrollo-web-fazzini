@@ -1,0 +1,117 @@
+.galeria {
+    padding: 52px;
+    color: nth($colores , 3);
+    text-align: center;
+
+    h2 {}
+
+    .contenedor-galeria {
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "sofia leila mariana"
+            "candela candela mariana"
+            "vanesa arizona jesica"
+            "andrea juliana juliana"
+        ;
+        grid-auto-rows: 567px;
+        gap: 20px;
+        justify-content: center;
+
+        .grid-imagen-sofia {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-pedido-especial-sofia.jpg);
+            grid-area: sofia;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-leila {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-rojo-especial-leila.jpg);
+            grid-area: leila;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-mariana {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-novia-encaje-mariana.jpg);
+            grid-area: mariana;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-candela {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-novia-con-colores-candela-hori.jpg);
+            grid-area: candela;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-vanesa {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-vanesa-amarilo.jpg);
+            grid-area: vanesa;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-arizona {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-de-novia-arizona.jpg);
+            grid-area: arizona;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-jesica {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-novia-jesica.jpg);
+            grid-area: jesica;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-andrea {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-andrea.jpg);
+            grid-area: andrea;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+
+        .grid-imagen-juliana {
+            @extend%grid-items-nosotros-galeria;
+            background-image: url(../img/galeria/vestido-amarillo-horizontal.jpg);
+            background-position: top;
+            grid-area: juliana;
+
+            p {
+                @extend%texto-grid-galeria;
+            }
+        }
+    }
+}
+.galeria-final{
+    padding: 52px;
+    text-align: center;
+}

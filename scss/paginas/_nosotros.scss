@@ -1,0 +1,85 @@
+.nosotros-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px 100px;
+    color: nth($colores, 2);
+
+    div {
+        margin-right: 50px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {}
+    }
+
+    img {
+        border-radius: 20px;
+        width: 50%;
+    }
+}
+
+.nosotros-propuesta-de-valor {
+    padding: 52px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 550px;
+    gap: 20px;
+    align-items: center;
+    grid-template-areas:
+        "calidad detalles diseño"
+        "atencion texto-del-medio diseño"
+    ;
+
+    .calidad {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/calidad.jpg);
+        grid-area: calidad;
+        @extend%grid-items-nosotros-galeria;
+
+        p {
+            @extend%texto-nosotros;
+        }
+    }
+
+    .detalles {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/detalles.jpg);
+        grid-area: detalles;
+        @extend%grid-items-nosotros-galeria;
+
+        p {
+            @extend%texto-nosotros;
+        }
+    }
+
+    .diseño {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/vestido-de-diseño.jpg);
+        grid-area: diseño;
+        @extend%grid-items-nosotros-galeria;
+
+        p {
+            @extend%texto-nosotros;
+        }
+    }
+
+    .atencion {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)),
+            url(../img/atencion-personalizada.jpg);
+        grid-area: atencion;
+        @extend%grid-items-nosotros-galeria;
+
+        p {
+            @extend%texto-nosotros;
+        }
+    }
+
+    .texto-del-medio {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        grid-area: texto-del-medio;
+        width: 100%;
+
+        p {}
+    }
+}

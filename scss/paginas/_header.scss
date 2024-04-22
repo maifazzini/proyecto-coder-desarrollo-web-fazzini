@@ -1,0 +1,35 @@
+header {
+    background-color:nth($colores, 4);
+    color: nth($colores, 1);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    nav {
+        width: 100%;
+        background-color: nth($colores, 4);
+        color: nth($colores, 1);
+
+        .container-fluid {
+            a {
+                h1 {
+                    font-size: 0px;
+                    background-image: url(../img/logo-bujer.png);
+                    width: 116px;
+                    height: 50px;
+                    display: block;
+                }
+            }
+
+            .navbar-collapse {
+                ul {
+                    li {
+                        a {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

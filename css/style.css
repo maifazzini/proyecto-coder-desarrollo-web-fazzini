@@ -435,39 +435,35 @@ footer div img {
     ;
 }
 
+
 .nosotros-propuesta-de-valor .grid-nosotros-item {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nosotros-propuesta-de-valor .calidad {
     background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/calidad.jpg);
-    background-repeat: no-repeat;
     grid-area: calidad;
 }
 
 .nosotros-propuesta-de-valor .detalles {
     background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/detalles.jpg);
-    background-repeat: no-repeat;
     grid-area: detalles;
 }
 
 .nosotros-propuesta-de-valor .diseño {
     background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)), url(../img/vestido-de-diseño.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     grid-area: diseño;
 }
 
 .nosotros-propuesta-de-valor .atencion {
     background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.76)),
         url(../img/atencion-personalizada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     grid-area: atencion;
 }
 
@@ -1011,18 +1007,12 @@ footer div img {
 
 .grid-imagen-mariana {
     background-image: url(../img/galeria/vestido-novia-encaje-mariana.jpg);
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
     /* grid-row: span 2; */
     grid-area: mariana;
 }
 
 .grid-imagen-candela {
     background-image: url(../img/galeria/vestido-novia-con-colores-candela-hori.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
     /* grid-column: span 2; */
     grid-area: candela;
 }
@@ -1049,10 +1039,8 @@ footer div img {
 
 .grid-imagen-juliana {
     background-image: url(../img/galeria/vestido-amarillo-horizontal.jpg);
-    border-radius: 20px;
     /* grid-column: span 2; */
     background-position: top;
-    background-size: cover;
     grid-area: juliana;
 }
 .galeria-final{
