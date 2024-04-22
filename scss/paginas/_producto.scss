@@ -1,42 +1,70 @@
-.producto-vestido{
+.producto-vestido {
     display: flex;
     padding: 0 100px 52px 100px;
     justify-content: center;
     align-items: center;
     color: nth($colores, 3);
-    img{
+
+    .carrusel-animacion {
         width: 436px;
         height: 578px;
-    }
-    div{
-        margin-left: 100px;
-        h2{
-            color: nth($colores, 3);
-    margin-bottom: 15px;
-        }
-        p{
-            margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: 700;
-        }
-        h3{
-            text-transform: uppercase;
-    font-family: "Lato", sans-serif;
-    font-size: 30px;
-        }
-        ul{
+        overflow: hidden;
+
+        ul {
+            width: 200%;
             list-style: none;
-    margin-bottom: 30px;
-            li{
-                font-family: "Lato", sans-serif;
-    font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            animation: carrusel 13s infinite;
+
+            li {
+                margin: auto;
+                width: 50%;
+
+                img {
+                    width: 436px;
+                    height: 578px;
+                }
             }
         }
     }
-    .boton-producto{
-        margin-left: 0px;
-        a{
 
+    .descripcion-producto-producto {
+        margin-left: 100px;
+
+        h2 {
+            color: nth($colores, 3);
+            margin-bottom: 15px;
         }
+
+        p {
+            margin-bottom: 40px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-family: "Lato", sans-serif;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+
+            li {
+                font-family: "Lato", sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .boton-producto {
+        margin-left: 0px;
+
+        a {}
     }
 }

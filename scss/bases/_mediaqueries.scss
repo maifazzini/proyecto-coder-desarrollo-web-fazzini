@@ -493,7 +493,7 @@
 /* ------------------------------------producto--------------------------------------- */
 
 @media screen and (max-width:1100px) {
-    .producto-vestido div h2 {
+    .producto-vestido .descripcion-producto-producto h2 {
         font-size: 40px;
     }
 
@@ -501,17 +501,17 @@
         padding: 0 52px 52px 52px;
     }
 
-    .producto-vestido div p {
+    .producto-vestido .descripcion-producto-producto p {
         font-size: 25px;
     }
 
-    .producto-vestido div h3 {
+    .producto-vestido .descripcion-producto-producto h3 {
         font-size: 25px;
     }
 }
 
 @media screen and (max-width:900px) {
-    .producto-vestido div h2 {
+    .producto-vestido .descripcion-producto-producto h2 {
         font-size: 52px;
     }
 
@@ -520,12 +520,12 @@
         flex-direction: column;
     }
 
-    .producto-vestido div p,
-    .producto-vestido div h3 {
+    .producto-vestido .descripcion-producto-producto p,
+    .producto-vestido .descripcion-producto-producto h3 {
         font-size: 30px;
     }
 
-    .producto-vestido div {
+    .producto-vestido .descripcion-producto-producto {
         margin-left: 0;
         margin-top: 52px;
     }
@@ -533,7 +533,11 @@
 }
 
 @media screen and (max-width:650px) {
-    .producto-vestido img {
+    .producto-vestido .carrusel-animacion{
+        width: 100%;
+        height: 100%;
+    }
+    .producto-vestido .carrusel-animacion ul li img {
         width: 100%;
         height: 100%;
     }
@@ -542,29 +546,29 @@
         padding: 0;
     }
 
-    .producto-vestido div {
+    .producto-vestido .descripcion-producto-producto {
         margin: 52px 0;
     }
 }
 
 @media screen and (max-width:440px) {
-    .producto-vestido div h2 {
+    .producto-vestido .descripcion-producto-producto h2 {
         font-size: 40px;
     }
 
-    .producto-vestido div p {
+    .producto-vestido .descripcion-producto-producto p {
         font-size: 20px;
     }
 
-    .producto-vestido div ul li {
+    .producto-vestido .descripcion-producto-producto ul li {
         font-size: 16px;
     }
 
-    .producto-vestido div h3 {
+    .producto-vestido .descripcion-producto-producto h3 {
         font-size: 20px;
     }
 
-    .boton-producto {
+    .producto-vestido .descripcion-producto-producto .boton-producto {
         text-align: center;
     }
 
