@@ -1,7 +1,5 @@
 .nosotros-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, space-between, center, nowrap);
     padding: 52px 100px;
     color: nth($colores, 2);
 

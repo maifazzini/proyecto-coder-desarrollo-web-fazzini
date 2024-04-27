@@ -16,18 +16,12 @@
     }
 
     .contenedor-contacto {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        @include flex (flex, space-between, center, wrap);
 
         a {
             div {
                 color: nth($colores, 2);
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: wrap;
+                @include flex (flex, space-evenly, center, wrap);
 
                 i {
                     margin: 10px;
@@ -55,10 +49,7 @@
 
     form {
         .form-fila {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            flex-wrap: wrap;
+            @include flex (flex, space-between, start, wrap);
 
             div {
                 width: 400px;
@@ -125,10 +116,7 @@
     }
 }
 .contacto-local{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex (flex, space-between, center, wrap);
     background-color: nth($colores, 5);
     color: nth($colores, 3);
     div{

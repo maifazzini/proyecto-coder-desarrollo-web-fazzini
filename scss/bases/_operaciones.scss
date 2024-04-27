@@ -1,10 +1,17 @@
+$verde-principal: #045B7D;
+$azul-oscuro: #0f313f;
+$azul-grisacio: #1A3742;
+$celeste-clarito1: #baccd6;
+$celeste-mas-clarito: #9fa8b3;
+$neutro-claro: #e8ecf1;
+
 $colores: 
-#045B7D,
-#0f313f,
-#1A3742,
-#baccd6,
-#9fa8b3,
-#e8ecf1;
+$verde-principal,
+$azul-oscuro,
+$azul-grisacio,
+$celeste-clarito1,
+$celeste-mas-clarito,
+$neutro-claro;
 
 %grid-items-nosotros-galeria{
     border-radius: 20px;
@@ -33,4 +40,11 @@ $colores:
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+@mixin flex ($display, $justify, $align, $wrap){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
 }

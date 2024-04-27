@@ -113,6 +113,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 20px; }
   footer img {
     width: 116px;
@@ -241,9 +242,10 @@ footer {
 
 .producto-vestido {
   display: flex;
-  padding: 0 100px 52px 100px;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 100px 52px 100px;
   color: #1A3742; }
   .producto-vestido .carrusel-animacion {
     width: 436px;
@@ -255,6 +257,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: nowrap;
       padding-left: 0;
       animation: carrusel 13s infinite; }
       .producto-vestido .carrusel-animacion ul li {
@@ -289,6 +292,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 52px 100px;
   color: #0f313f; }
   .nosotros-1 div {
@@ -761,6 +765,10 @@ footer {
     margin-bottom: 30px; }
   .contacto-local div {
     width: 100%; } }
+
+@media screen and (max-width: 390px) {
+  .contacto-1 .contenedor-contacto a div {
+    flex-direction: column; } }
 
 /* ------------------------------------producto--------------------------------------- */
 @media screen and (max-width: 1100px) {

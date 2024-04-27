@@ -1,8 +1,6 @@
 .producto-vestido {
-    display: flex;
+    @include flex (flex, center, center, nowrap);
     padding: 0 100px 52px 100px;
-    justify-content: center;
-    align-items: center;
     color: nth($colores, 3);
 
     .carrusel-animacion {
@@ -13,9 +11,7 @@
         ul {
             width: 200%;
             list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center, nowrap);
             padding-left: 0;
             animation: carrusel 13s infinite;
 
@@ -31,6 +27,7 @@
         }
     }
 
+    
     .descripcion-producto-producto {
         margin-left: 100px;
 

@@ -489,6 +489,11 @@
         width: 100%;
     }
 }
+@media screen and (max-width:390px){
+    .contacto-1 .contenedor-contacto a div{
+        flex-direction: column;
+    }
+}
 
 /* ------------------------------------producto--------------------------------------- */
 
@@ -531,6 +536,7 @@
     }
 
 }
+
 
 @media screen and (max-width:650px) {
     .producto-vestido .carrusel-animacion{

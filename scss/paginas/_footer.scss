@@ -1,9 +1,7 @@
 footer {
     background-color: nth($colores, 4);
     color: nth($colores, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, space-between, center, nowrap);
     padding: 20px;
     img {
         width: 116px;
