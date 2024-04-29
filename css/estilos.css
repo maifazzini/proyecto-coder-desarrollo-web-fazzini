@@ -123,6 +123,7 @@ footer {
     height: 42px;
     margin-left: 20px; }
 
+/*?------------------------------------------------inicio------------------------------------------------- */
 .banner-inicio {
   background: url(../img/banner-vestido-negro.gif) no-repeat center;
   background-size: cover;
@@ -145,6 +146,37 @@ footer {
     left: 100px;
     background-color: #0f313f;
     color: #e8ecf1; }
+
+.porque-elegirnos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 52px 100px;
+  text-align: center; }
+  .porque-elegirnos .porque-elegirnos-card {
+    color: #0f313f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    text-align: center; }
+    .porque-elegirnos .porque-elegirnos-card i {
+      margin: 10px;
+      font-size: 52px;
+      color: #045B7D;
+      text-align: center; }
+    .porque-elegirnos .porque-elegirnos-card div h2 {
+      font-size: 26px;
+      text-align: center;
+      width: 60%;
+      margin: auto; }
+    .porque-elegirnos .porque-elegirnos-card div p {
+      font-size: 14px;
+      width: 60%;
+      margin: auto; }
 
 .losmasvendidos-inicio {
   padding: 70px 100px;
@@ -537,8 +569,12 @@ footer {
   .losmasvendidos-inicio a {
     font-size: 16px; }
   .losmasvendidos-inicio,
-  .vestido-a-medida {
-    padding: 52px; } }
+  .vestido-a-medida, .porque-elegirnos {
+    padding: 52px; }
+  .porque-elegirnos .porque-elegirnos-card div h2 {
+    font-size: 20px; }
+  .porque-elegirnos .porque-elegirnos-card div p {
+    font-size: 12px; } }
 
 @media screen and (max-width: 590px) {
   .losmasvendidos-inicio .contenedor-producto-inicio {

@@ -67,9 +67,13 @@
     }
 
     .losmasvendidos-inicio,
-    .vestido-a-medida {
+    .vestido-a-medida,.porque-elegirnos {
         padding: 52px;
     }
+    .porque-elegirnos .porque-elegirnos-card div h2 {
+        font-size: 20px; }
+    .porque-elegirnos .porque-elegirnos-card div p {
+        font-size: 12px; }
 }
 
 @media screen and (max-width:590px) {

@@ -1,9 +1,12 @@
+/*?------------------------------------------------inicio------------------------------------------------- */
+
 .banner-inicio {
     background: url(../img/banner-vestido-negro.gif) no-repeat center;
     background-size: cover;
     height: calc(100vh - 90px);
     position: relative;
-/*     
+
+    /*     
         h2{
             font-family: "Lato", sans-serif;
                 font-size: 50px;
@@ -13,7 +16,7 @@
         left: 100px;
         color: nth($colores, 6 );
         width: 40%;
-    } */ 
+    } */
     a {
         position: absolute;
         bottom: 50px;
@@ -21,6 +24,40 @@
         background-color: nth($colores, 2);
         color: nth($colores, 6);
     }
+}
+
+.porque-elegirnos{
+    @include flex (flex, space-between, center, wrap);
+    padding: 52px 100px;
+    text-align: center;
+        .porque-elegirnos-card{
+            color: nth($colores, 2);
+            @include flex (flex, center, center, wrap);
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            i {
+                margin: 10px;
+                font-size: 52px;
+                color: nth($colores, 1);
+                text-align: center;
+            }
+            div{
+                
+                h2 {
+                    font-size: 26px;
+                    text-align: center;
+                    width: 60%;
+                    margin: auto;
+                }
+        
+                p {
+                    font-size: 14px;
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+        }
 }
 
 .losmasvendidos-inicio {
@@ -54,6 +91,7 @@
                     width: 265px;
                     height: 363px;
                     overflow: hidden;
+
                     ul {
                         width: 200%;
                         list-style: none;
@@ -61,8 +99,8 @@
                         justify-content: center;
                         align-items: center;
                         padding-left: 0;
-                        
-                        &:hover{
+
+                        &:hover {
                             animation: carrusel 5s infinite;
                         }
 
