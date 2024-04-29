@@ -240,6 +240,7 @@ footer {
         font-family: "Lato", sans-serif;
         font-size: 24px; }
 
+/* ---------------------------------------producto---------------------------------------- */
 .producto-vestido {
   display: flex;
   justify-content: center;
@@ -281,12 +282,20 @@ footer {
       font-size: 30px; }
     .producto-vestido .descripcion-producto-producto ul {
       list-style: none;
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
       .producto-vestido .descripcion-producto-producto ul li {
         font-family: "Lato", sans-serif;
         font-size: 20px; }
-  .producto-vestido .boton-producto {
-    margin-left: 0px; }
+    .producto-vestido .descripcion-producto-producto .texto-envio {
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      text-indent: 10px; }
+      .producto-vestido .descripcion-producto-producto .texto-envio strong {
+        font-size: 25px; }
+    .producto-vestido .descripcion-producto-producto .boton-producto {
+      margin-left: 0px; }
 
 .nosotros-1 {
   display: flex;
