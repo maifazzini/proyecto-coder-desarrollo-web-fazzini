@@ -134,8 +134,8 @@
 
 .vestido-a-medida {
     padding: 52px 100px;
-    background-color: #9fa8b3;
-    color: #1A3742;
+    background-color: nth($colores, 5);
+    color: nth($colores, 3);
     text-align: center;
 
     h2 {}
