@@ -23,9 +23,11 @@ a {
 }
 
 body {
-    background-color: #e8ecf1;
+    background-color:nth($colores , 6);
 }
-
+a:hover{
+    color: nth($colores , 2);
+}
 .boton {
     font-family: "Lato", sans-serif;
     font-size: 20px;
@@ -36,6 +38,11 @@ body {
     text-transform: uppercase;
     padding: 10px 15px 10px 15px;
     border-radius: 5px;
+}
+.boton:hover {
+    color: nth($colores , 6);
+    background-color: nth($colores , 2) ;
+    border: 2px solid nth($colores , 2);
 }
 
 /*-----------------------------bootstrap navbar------------------------- */
