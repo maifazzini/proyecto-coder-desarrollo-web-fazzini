@@ -36,6 +36,11 @@ h2 {
   font-family: "Lora", serif;
   font-size: 52px; }
 
+option {
+  min-height: 0;
+  display: inline;
+  white-space: normal; }
+
 p {
   font-family: "Lato", sans-serif;
   font-size: 24px;
@@ -283,14 +288,16 @@ footer {
       .contenedor-tienda .tienda-productos .producto-tienda a img {
         width: 245px;
         height: 343px; }
-      .contenedor-tienda .tienda-productos .producto-tienda a div h2 {
-        color: #1A3742;
-        font-family: "Lato", sans-serif;
-        font-size: 24px; }
-      .contenedor-tienda .tienda-productos .producto-tienda a div p {
-        color: #1A3742;
-        font-family: "Lato", sans-serif;
-        font-size: 24px; }
+      .contenedor-tienda .tienda-productos .producto-tienda a div {
+        margin-top: 10px; }
+        .contenedor-tienda .tienda-productos .producto-tienda a div h2 {
+          color: #1A3742;
+          font-family: "Lato", sans-serif;
+          font-size: 24px; }
+        .contenedor-tienda .tienda-productos .producto-tienda a div p {
+          color: #1A3742;
+          font-family: "Lato", sans-serif;
+          font-size: 24px; }
 
 /* ---------------------------------------producto---------------------------------------- */
 .producto-vestido {
@@ -492,6 +499,9 @@ footer {
         display: block;
         margin: 10px 0 30px 0;
         padding: 8px; }
+        .formulario form .form-fila div .input option {
+          font-family: "Lato", sans-serif;
+          font-size: 20px; }
   .formulario form label {
     font-family: "Lato", sans-serif;
     font-size: 24px;
@@ -756,6 +766,8 @@ footer {
 @media screen and (max-width: 1000px) {
   .formulario form .form-fila div .input {
     width: 100%; }
+  .formulario form .form-fila div .input option {
+    font-size: 16px; }
   .formulario form .form-fila div {
     width: 100%; } }
 
@@ -808,7 +820,7 @@ footer {
   .contacto-1 h2 {
     font-size: 30px; }
   .contacto-local div p,
-  .formulario form .boton-form input,
+  .formulario form .boton-form input, .formulario form .boton-form input select,
   .formulario form .boton-form input,
   .formulario form .input-comentario {
     font-size: 16px; }
@@ -833,7 +845,9 @@ footer {
 
 @media screen and (max-width: 390px) {
   .contacto-1 .contenedor-contacto a div {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .formulario form .form-fila div .input {
+    font-size: 16px; } }
 
 /* ------------------------------------producto--------------------------------------- */
 @media screen and (max-width: 1100px) {

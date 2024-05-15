@@ -368,10 +368,13 @@
     .formulario form .form-fila div .input  {
         width: 100%;
     }
-
+    .formulario form .form-fila div .input option {
+        font-size: 16px;
+    }
     .formulario form .form-fila div {
         width: 100%;
     }
+
 
 
 }
@@ -456,7 +459,7 @@
     }
 
     .contacto-local div p,
-    .formulario  form .boton-form input,
+    .formulario  form .boton-form input, .formulario  form .boton-form input select,
     .formulario  form .boton-form input,
     .formulario  form .input-comentario {
         font-size: 16px;
@@ -497,6 +500,9 @@
 @media screen and (max-width:390px){
     .contacto-1 .contenedor-contacto a div{
         flex-direction: column;
+    }
+    .formulario form .form-fila div .input  {
+        font-size: 16px;
     }
 }
 

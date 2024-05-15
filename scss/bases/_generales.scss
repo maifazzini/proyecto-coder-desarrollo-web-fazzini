@@ -12,6 +12,12 @@ h2 {
     font-size: 52px;
 }
 
+option{
+    min-height: 0;
+    display: inline;
+    white-space: normal;
+}
+
 p {
     font-family: "Lato", sans-serif;
     font-size: 24px;
